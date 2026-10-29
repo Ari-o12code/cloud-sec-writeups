@@ -1,0 +1,21 @@
+[
+  {
+    "eventTime": "2026-10-26T18:40:57Z",
+    "eventName": "GenerateDataKey",
+    "userIdentity": {
+      "type": "IAMUser",
+      "arn": "arn:aws:iam::111122223333:user/iamadmin",
+      "invokedBy": "fas.s3.amazonaws.com",
+      "mfaAuthenticated": "true"
+    },
+    "sourceIPAddress": "fas.s3.amazonaws.com",
+    "userAgent": "fas.s3.amazonaws.com",
+    "encryptionContext": {
+      "aws:s3:arn": "arn:aws:s3:::kmslab-ssekms-<suffix>/kyc-sample.csv"
+    },
+    "requestID": "85d2ce48-716f-4c9e-b471-be50569374fc",
+    "key": [
+      "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+    ]
+  }
+]

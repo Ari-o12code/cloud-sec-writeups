@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListBothBuckets",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": [
+        "arn:aws:s3:::kmslab-sses3-<suffix>",
+        "arn:aws:s3:::kmslab-ssekms-<suffix>"
+      ]
+    },
+    {
+      "Sid": "ReadObjectsInBothBuckets",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": [
+        "arn:aws:s3:::kmslab-sses3-<suffix>/*",
+        "arn:aws:s3:::kmslab-ssekms-<suffix>/*"
+      ]
+    }
+  ]
+}

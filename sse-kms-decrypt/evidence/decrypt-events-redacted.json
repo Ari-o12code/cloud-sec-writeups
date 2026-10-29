@@ -1,0 +1,70 @@
+[
+  {
+    "eventTime": "2026-10-26T18:48:55Z",
+    "eventName": "Decrypt",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "arn": "arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01",
+      "invokedBy": "fas.s3.amazonaws.com",
+      "mfaAuthenticated": "true"
+    },
+    "sourceIPAddress": "fas.s3.amazonaws.com",
+    "userAgent": "fas.s3.amazonaws.com",
+    "encryptionContext": {
+      "aws:s3:arn": "arn:aws:s3:::kmslab-ssekms-<suffix>/kyc-sample.csv"
+    },
+    "requestID": "605aa300-f62a-45f1-8974-4bb4b0f9f179",
+    "key": [
+      "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+    ]
+  },
+  {
+    "eventTime": "2026-10-26T18:48:55Z",
+    "eventName": "Decrypt",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "arn": "arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01",
+      "invokedBy": "fas.s3.amazonaws.com",
+      "mfaAuthenticated": "true"
+    },
+    "sourceIPAddress": "fas.s3.amazonaws.com",
+    "userAgent": "fas.s3.amazonaws.com",
+    "encryptionContext": {
+      "aws:s3:arn": "arn:aws:s3:::kmslab-ssekms-<suffix>/kyc-sample.csv"
+    },
+    "requestID": "8afbbdd9-c36f-4749-98d8-bfdb52ef8fff",
+    "key": [
+      "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+    ]
+  },
+  {
+    "eventTime": "2026-10-26T18:46:44Z",
+    "eventName": "Decrypt",
+    "errorCode": "AccessDenied",
+    "errorMessage": "User: arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01 is not authorized to perform: kms:Decrypt on resource: arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab because no identity-based policy allows the kms:Decrypt action",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "arn": "arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01",
+      "invokedBy": "fas.s3.amazonaws.com",
+      "mfaAuthenticated": "true"
+    },
+    "sourceIPAddress": "fas.s3.amazonaws.com",
+    "userAgent": "fas.s3.amazonaws.com",
+    "requestID": "e79d18f8-3c55-4f48-ad62-9f2958cef1d0"
+  },
+  {
+    "eventTime": "2026-10-26T18:46:44Z",
+    "eventName": "Decrypt",
+    "errorCode": "AccessDenied",
+    "errorMessage": "User: arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01 is not authorized to perform: kms:Decrypt on resource: arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab because no identity-based policy allows the kms:Decrypt action",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "arn": "arn:aws:sts::111122223333:assumed-role/kms-lab-reader/lab01",
+      "invokedBy": "fas.s3.amazonaws.com",
+      "mfaAuthenticated": "true"
+    },
+    "sourceIPAddress": "fas.s3.amazonaws.com",
+    "userAgent": "fas.s3.amazonaws.com",
+    "requestID": "ac85e013-0360-4ad1-9f32-fda463b9fca7"
+  }
+]
